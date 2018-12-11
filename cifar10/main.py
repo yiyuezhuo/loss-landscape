@@ -194,7 +194,8 @@ if __name__ == '__main__':
     if not os.path.exists('trained_nets/' + save_folder):
         os.makedirs('trained_nets/' + save_folder)
 
-    f = open('trained_nets/' + save_folder + '/log.out', 'a', 0)
+    #f = open('trained_nets/' + save_folder + '/log.out', 'a', 0)
+    f = open('trained_nets/' + save_folder + '/log.out', 'a')
 
     trainloader, testloader = dataloader.get_data_loaders(args)
 
